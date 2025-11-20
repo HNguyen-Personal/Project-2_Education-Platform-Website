@@ -46,7 +46,7 @@ body {
    max-width: calc(100% - 48px);
 }
 
-.break-all{
+.break-all {
    word-break: break-all;
 }
 
@@ -435,4 +435,146 @@ h1 h2 {
 
 .courses .content .courses-list .course-item .btn:hover {
    background: var(--primary-color);
+}
+
+/* ---------Feedback Section--------- */
+
+.feedback {
+   padding: 96px 0;
+   background: #2e2100;
+}
+.feedback-list {
+   display: flex;
+   overflow: hidden;
+}
+
+.feedback-item {
+   display: flex;
+   flex-shrink: 0;
+   width: 100%;
+}
+
+.feedback-item .avatar {
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.feedback-item .info .title {
+   margin-top: 18px;
+   color: #f7f7f7;
+   font-family: Sen;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.42;
+}
+
+.feedback-item .info .desc {
+   margin-top: 4px;
+   color: #bfbcb2;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.85;
+}
+.feedback-item .dots {
+   display: flex;
+   margin-top: 28px;
+   gap: 12px;
+}
+
+.feedback-item .dot {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: #634700;
+   cursor: pointer;
+}
+
+.feedback-item .dot.active {
+   background-color: var(--primary-color);
+   cursor: default;
+}
+
+.feedback-item .feedback-content {
+   max-width: 66%;
+   margin-left: auto;
+}
+
+.feedback-item .feedback-content blockquote {
+   padding-left: 30px;
+   color: #fff;
+   font-size: 26px;
+   font-style: italic;
+   font-weight: 400;
+   line-height: 1.54;
+}
+
+/* ---------------Feature-------------- */
+
+.feature {
+   padding: 200px 0;
+}
+
+.feature .feature-top {
+   display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+}
+
+.feature .feature-top .image {
+   display: flex;
+   width: 50%;
+   gap: 0 30px;
+}
+
+.feature .feature-top .image img {
+   display: block;
+   height: 40.5rem;
+   display: block;
+   object-fit: cover;
+   width: 270px;
+}
+
+.feature .feature-top .image img:first-child {
+   margin-top: 34px;
+}
+
+.feature .feature-content,
+.feature .feature-content {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.feature-content .desc {
+   margin-top: 16px;
+   color: #5f5b53;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.75; /* 175% */
+}
+
+.feature-content .btn {
+   width: 137px;
+   padding: 0;
+   margin-top: 32px;
+}
+
+.feature .feature-bottom {
+   display: flex;
+   margin-top: 200px;
+   justify-content: space-between;
+}
+
+.feature .feature-bottom .feature-content {
+   width: 49%;
+}
+
+.feature-bottom .image img {
+   width: 470px;
+   height: 440px;
+   object-fit: cover;
 }
